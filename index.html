@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <nav class="flex items-center justify-between p-6">
+      <img src="Logo.png" alt="" />
+      <ul class="flex gap-6 font-medium [@media(max-width:1024px)]:hidden">
+        <li>Link 1</li>
+        <li>Link 2</li>
+        <li>Link 3</li>
+        <li>Link 4</li>
+        <li>Link 5</li>
+      </ul>
+      <button class="bg-black w-14 h-6 text-white rounded-xl text-xs">
+        Action
+      </button>
+    </nav>
+    <section
+      class="flex justify-evenly items-center p-12 [@media(max-width:1024px)]:flex-col"
+    >
+      <div class="flex flex-col gap-6">
+        <div>
+          <h1 class="font-extrabold text-4xl">
+            Medium length <br />
+            display headline
+          </h1>
+          <p class="text-xs font-light pt-2">
+            Separated they live in Bookmarks right at the coast <br />
+            of the famous Semantics, large language
+          </p>
+        </div>
+        <div class="flex items-center gap-4 [@media(max-width:1024px)]:flex-col">
+          <button class="bg-black w-16 h-8 text-white rounded-xl text-xs">
+            Action
+          </button>
+          <p class="text-sm font-medium">
+            5,000 people like you have <br />
+            purchased this product!
+          </p>
+        </div>
+      </div>
+      <div class="w-[40%] [@media(max-width:1024px)]:w-auto">
+        <img src="img.png" alt="" />
+      </div>
+    </section>
+    <section
+      class="flex justify-center items-center gap-2 bg-[#F3F3F3] p-12 [@media(max-width:1024px)]:flex-col [@media(max-width:1024px)]:gap-6"
+    >
+      <div
+        class="flex flex-col gap-3 [@media(max-width:1024px)]:items-center [@media(max-width:1024px)]:text-center"
+      >
+        <div class="flex gap-2 items-center">
+          <div class="bg-black w-6 h-6 rounded-full"></div>
+          <h2 class="font-medium">Feature one</h2>
+        </div>
+        <p class="text-xs w-[300px]">
+          All base UI elements are made using Nested Symbols and shared styles
+          that are logically <br />
+          connected with one another.
+        </p>
+      </div>
+      <div
+        class="flex flex-col gap-3 [@media(max-width:1024px)]:items-center [@media(max-width:1024px)]:text-center"
+      >
+        <div class="flex gap-2 items-center">
+          <div class="bg-black w-6 h-6 rounded-full"></div>
+          <h2 class="font-medium">Feature one</h2>
+        </div>
+        <p class="text-xs w-[300px]">
+          All base UI elements are made using Nested Symbols and shared styles
+          that are logically <br />
+          connected with one another.
+        </p>
+      </div>
+      <div
+        class="flex flex-col gap-3 [@media(max-width:1024px)]:items-center [@media(max-width:1024px)]:text-center"
+      >
+        <div class="flex gap-2 items-center">
+          <div class="bg-black w-6 h-6 rounded-full"></div>
+          <h2 class="font-medium">Feature one</h2>
+        </div>
+        <p class="text-xs w-[300px]">
+          All base UI elements are made using Nested Symbols and shared styles
+          that are logically <br />
+          connected with one another.
+        </p>
+      </div>
+    </section>
+    <section class="flex justify-evenly items-center bg-black p-12 [@media(max-width:1024px)]:flex-col [@media(max-width:1024px)]:items-center">
+      <div>
+        <img src="img.png" alt="" />
+      </div>
+      <div class="flex flex-col gap-6 text-white">
+        <h1 class="font-medium [@media(max-width:1024px)]:text-center">
+          Long headline on two lines to turn <br />
+          your visitors into users and achieve <br />
+          more
+        </h1>
+        <p class="[@media(max-width:1024px)]:text-center">
+          Separated they live in Bookmarks right at the coast of the <br />
+          famous Semantics, large language ocean
+        </p>
+        <ul class="list-inside list-disc flex flex-col">
+          <li>Showcase and embed your work with</li>
+          <li>Publish across social channels in a click</li>
+          <li>Sell your videos worldwide</li>
+          <li>Embed your work with</li>
+        </ul>
+      </div>
+    </section>
+    <section class="flex justify-center items-center gap-6 p-10 [@media(max-width:1024px)]:flex-col">
+      <div class="flex flex-col p-4 gap-12 rounded-lg bg-[#F3F3F3] w-[350px]">
+        <p class="">
+          “A testimonial describing what the person thinks about this service,
+          product or startup in general.”
+        </p>
+        <div class="flex flex-col gap-2">
+          <img class="w-14 h-14" src="Image-1.png" alt="" />
+          <p class="font-bold">Name Surname</p>
+          <div class="flex justify-between">
+            <p>Description</p>
+            <div class="flex items-center gap-2 px-2">
+              <img class="w-4 h-4" src="Icon-1.svg" alt="" />
+              <img class="w-4 h-4" src="Icon.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col p-4 gap-12 rounded-lg bg-[#F3F3F3] w-[350px]">
+        <p class="">
+          “A testimonial describing what the person thinks about this service,
+          product or startup in general.”
+        </p>
+        <div class="flex flex-col gap-2">
+          <img class="w-14 h-14" src="Image-1.png" alt="" />
+          <p class="font-bold">Name Surname</p>
+          <div class="flex justify-between">
+            <p>Description</p>
+            <div class="flex items-center gap-2 px-2">
+              <img class="w-4 h-4" src="Icon-1.svg" alt="" />
+              <img class="w-4 h-4" src="Icon.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col p-4 gap-12 rounded-lg bg-[#F3F3F3] w-[350px]">
+        <p class="">
+          “A testimonial describing what the person thinks about this service,
+          product or startup in general.”
+        </p>
+        <div class="flex flex-col gap-2">
+          <img class="w-14 h-14" src="Image-1.png" alt="" />
+          <p class="font-bold">Name Surname</p>
+          <div class="flex justify-between">
+            <p>Description</p>
+            <div class="flex items-center gap-2 px-2">
+              <img class="w-4 h-4" src="Icon-1.svg" alt="" />
+              <img class="w-4 h-4" src="Icon.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="flex flex-col justify-center items-center gap-4 bg-[url(cta.png)] bg-cover h-screen"
+    >
+      <h1 class="text-white text-4xl font-extrabold text-center">
+        Long headline to turn your visitors <br />
+        into users
+      </h1>
+      <button class="bg-white w-20 h-9 text-black rounded-xl text-xs">
+        Action
+      </button>
+    </section>
+    <footer class="flex items-center p-20 justify-between bg-black [@media(max-width:1024px)]:flex-col [@media(max-width:1024px)]:gap-4">
+      <img src="logo-white.png" alt="" />
+
+      <ul class="flex text-white gap-6 font-medium [@media(max-width:1024px)]:flex-col">
+        <li>Link 1</li>
+        <li>Link 2</li>
+        <li>Link 3</li>
+        <li>Link 4</li>
+        <li>Link 5</li>
+      </ul>
+      <input
+        class="w-80 h-12 rounded-[40px] px-2"
+        placeholder="email"
+        type="text"
+      />
+    </footer>
+  </body>
+</html>
